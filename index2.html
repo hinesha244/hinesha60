@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            overflow-x: hidden;
+            background: white;
+            min-height: 100vh;
+        }
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .logo{
+            color: #112434;
+            font-weight: 700;
+            font-size: 2em;
+            text-decoration: none;
+        }
+        .navigation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .navigation li a{
+            text-decoration: none;
+            list-style-type: none;
+            padding: 6px 15px;
+            color: #112434;
+            border-radius: 20px;
+        }
+        .navigation li a:hover,
+        .navigation li a.active{
+            background: #112434;
+            color: #fff;
+        }
+        .parallax{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .parallax img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            position: none;
+        }
+        #text{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 4rem;
+            color: #112434;
+        }
+        .sec{
+            position: relative;
+            padding: 100px;
+            background: #112434;
+        }
+        .sec h2{
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .sec p{
+            font-size: 1em;
+            color: #fff;
+            font-weight: 300;
+        }
+    </style>
+    <script>
+        gsap.from("#m1",{
+            scrollTrigger:{
+                scrub:true
+            },
+            y:100,
+        })
+        gsap.from("#m2",{
+            scrollTrigger:{
+                scrub:true
+            },
+            y:50,
+        })
+        gsap.from("#t2",{
+            scrollTrigger:{
+                scrub:true
+            },
+            x:-50,
+        })
+        gsap.from("#t1",{
+            scrollTrigger:{
+                scrub:true
+            },
+            x:50,
+        })
+        gsap.from("#man",{
+            scrollTrigger:{
+                scrub:true
+            },
+            x:-250,
+        })
+        gsap.from("#plants",{
+            scrollTrigger:{
+                scrub:true
+            },
+            x:-50,
+        })
+        gsap.from("#text",{
+            scrollTrigger:{
+                scrub:true
+            },
+            x:600,
+        })
+    </script>
+    <script>
+        let x = 0;
+        function myFunction() {
+          document.getElementById("demo").innerHTML = x += 1;
+        }
+        </script>
+        
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Contect</a></li>
+        </ul>
+    </header>
+    <section class="parallax">
+        <h2 id="text">Prallax Website</h2>
+        <img src="" id="m1">
+        <img src="" id="t2">
+        <img src="" id="m2">
+        <img src="" id="m1">
+        <img src="" id="man">
+        <img src="" id="palnts">
+    </section>
+    <section class="sec">
+    <h2>parallax scrolling website</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nesciunt sit aperiam soluta deserunt quos praesentium quod facere odio? Numquam, cumque atque nobis fugiat, culpa error, et quis laborum tempore quisquam vitae esse iusto non ad molestias. Eligendi non natus totam ab reprehenderit, unde quas assumenda eveniet obcaecati! Amet laudantium deserunt beatae itaque incidunt sed ratione, vitae perspiciatis nostrum ad! Quasi asperiores accusamus, veniam ipsa quaerat assumenda sapiente molestias architecto placeat aliquid quibusdam atque minima quos quia, sunt saepe. Praesentium quibusdam hic quod odit, nihil ipsa consequatur deserunt! Harum perferendis voluptatibus ut, reiciendis unde placeat architecto eius odio praesentium, voluptas qui officiis nemo vitae culpa repellat sint necessitatibus iusto dolore. Enim laboriosam possimus repellendus necessitatibus! Unde deserunt provident debitis doloribus iure omnis, minima laudantium accusamus illum quasi porro reprehenderit, autem aut assumenda nobis quas eos vel, quidem ex eum enim dolor! Esse eum explicabo in vero aspernatur animi ex recusandae pariatur fugit deleniti modi porro voluptatem voluptates libero dolores rerum neque id beatae provident, quia ullam suscipit culpa, sit nulla. Atque eos quidem, suscipit explicabo maxime nemo laboriosam unde aspernatur tenetur cum totam architecto aliquam cumque maiores, impedit tempore. Accusamus, recusandae possimus. Nam ipsa, quod veniam sapiente iusto voluptate quas ratione blanditiis nihil. Porro neque tenetur facilis, molestias ipsa commodi magni impedit quas quos enim maiores, obcaecati aspernatur assumenda tempora asperiores sunt! Ipsa assumenda perspiciatis consequuntur a ullam cumque debitis atque. Quia delectus rerum voluptatibus quae hic quis est error fuga deleniti inventore? Nemo esse non, placeat soluta dolorem, et perspiciatis facere hic, laborum consequuntur officiis expedita tempora facilis fugit fugiat voluptatum sapiente asperiores sequi. Possimus natus numquam atque! Ab nostrum eaque natus quod expedita quasi omnis repellat quia, autem sint ullam. Tenetur, ipsam! Maxime ratione nemo dolores reprehenderit eligendi! Ipsam explicabo nesciunt exercitationem vel asperiores repellendus nobis veritatis quis rem soluta facilis perferendis, nihil accusantium debitis natus, repudiandae dolorum tempora? Sunt, obcaecati deserunt adipisci corporis id voluptatibus iste temporibus necessitatibus, quidem neque perspiciatis. Quasi similique distinctio facilis unde harum sapiente itaque rerum sint voluptatibus aperiam quia dignissimos, officia blanditiis eveniet? Nostrum eligendi nemo error consequuntur quibusdam? Laudantium, molestiae et? Odit nisi voluptates dicta nihil hic laborum expedita magnam itaque sequi voluptas. Quos necessitatibus ea nemo? Natus doloremque assumenda laudantium error delectus totam earum amet voluptatum magni optio! Expedita sequi dolorum eaque! Accusamus reiciendis eligendi quibusdam quod officiis consequatur, sunt, laboriosam nisi facilis laudantium magni nesciunt, suscipit natus. Doloribus, repudiandae minus cum qui sed a dolores sunt beatae optio molestiae doloremque tenetur facere, animi quisquam veritatis unde eum possimus mollitia expedita? Enim architecto quod beatae deleniti, necessitatibus fugit laboriosam quas ullam? Impedit totam quaerat fugiat accusamus asperiores! In perferendis velit, fuga exercitationem voluptatibus ex temporibus sapiente iste dicta maiores magnam quod, at eaque voluptatum architecto cupiditate necessitatibus? Ea debitis laudantium eos dignissimos provident fugit asperiores, minima eum voluptate rerum dolorem, doloribus saepe repudiandae distinctio illum voluptatem? Assumenda quo et hic nemo quas soluta eligendi laborum blanditiis similique itaque! Recusandae corporis repudiandae nostrum nihil. Placeat temporibus illo architecto culpa aperiam! Natus.</p>
+</section>
+</body>
+</html>
